@@ -1,0 +1,32 @@
+version: 1
+disable_existing_loggers: true
+formatters:
+  json: 
+    (): pythonjsonlogger.jsonlogger.JsonFormatter
+    format: "%(asctime)s - %(levelname)s - %(lineno)d - %(message)s"
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: DEBUG
+    formatter: json
+    stream: ext://sys.stdout
+
+  filehandler:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: DEBUG
+    formatter: json
+    filename: E:/QRadarAsyncAPI2/logs/pymongologs.json
+    encoding: utf8
+    backupCount: 14
+    when: 'midnight'
+    interval: 1
+    delay: True
+
+loggers:
+  mylogger:
+    level: DEBUG
+    handlers: [console]
+root:
+  level: DEBUG
+  handlers: [console, filehandler]

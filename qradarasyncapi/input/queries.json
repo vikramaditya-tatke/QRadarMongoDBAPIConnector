@@ -1,0 +1,5 @@
+{
+    "Query1": "SELECT DOMAINNAME(domainId) AS 'domainName', LOGSOURCENAME(logSourceId) AS 'Log Source', sourceIP AS 'Source IP', destinationIP AS 'Desitnation IP' FROM events WHERE DOMAINNAME(domainId) = @@@@@ START !!!!! STOP $$$$$ PARAMETERS REMOTESERVERS=ARIELSERVERS4EPID(#####)",
+    "Query2": "SELECT DOMAINNAME(domainId) AS 'domainName', LOGSOURCENAME(logSourceId) AS 'Log Source', sourceIP AS 'Source IP', destinationIP AS 'Desitnation IP' FROM events WHERE DOMAINNAME(domainId) = @@@@@ START !!!!! STOP $$$$$ PARAMETERS REMOTESERVERS=ARIELSERVERS4EPID(#####)",
+    "Query3": "SELECT DOMAINNAME(domainId) AS 'domainName', LOGSOURCENAME(logSourceId) AS 'Log Source', sourceIP AS 'Source IP', destinationIP AS 'Desitnation IP' FROM events WHERE DOMAINNAME(domainId) = @@@@@ START !!!!! STOP $$$$$ PARAMETERS REMOTESERVERS=ARIELSERVERS4EPID(#####)"
+}

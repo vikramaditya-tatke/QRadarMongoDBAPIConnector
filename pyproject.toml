@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "qradarasyncapi2"
+version = "0.1.0"
+description = ""
+authors = ["Vikram Tatke <vikramadityatatke@proton.me>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+asyncio = "^3.4.3"
+requests = "^2.28.1"
+python-dotenv = "^0.21.0"
+black = "^22.10.0"
+pandas = "^1.5.2"
+motor = "^3.1.1"
+aiohttp = "^3.8.3"
+tabulate = "^0.9.0"
+pip = "^22.3.1"
+prodict = "^0.8.18"
+sentry-sdk = "^1.11.1"
+python-json-logger = "^2.0.4"
+pyyaml = "^6.0"
+memory-profiler = "^0.61.0"
+python-logstash = "^0.4.8"
+httpx = {extras = ["http2"], version = "^0.24.1"}
+scheduler = "^0.8.4"
+schedule = "^1.2.0"
+matplotlib = "^3.7.1"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
